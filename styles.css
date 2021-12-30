@@ -125,10 +125,12 @@ button{
     width: 160px;
     height: 57px;
     font-size: 24px;
-    color:#2F2325;
+    --button-color-primary:#2F2325;
+    color:var(--button-color-primary);
     background-color:var(--secondary-font-color);
     font-family: 'Sarala', sans-serif;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    --box-shadow-primary:rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 5px 4px var(--box-shadow-primary);
     border-radius: 20px;
     border: 0;
     transition: all 0.3s;
