@@ -4,6 +4,11 @@
     padding: 0;
     text-decoration: none;
 }
+:root{
+    --main-font-color: #FFF2E7;
+    --secondary-font-color:#ECD6C4;
+    --least-used-color:#FEAFBE;
+}
 body{
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
 }
@@ -14,7 +19,7 @@ header{
     align-items: center;
     width: 100%;
     justify-content: space-around;
-    border-bottom:0.1rem solid #FFF2E7;
+    border-bottom:0.1rem solid var(--main-font-color);
     margin-top: 1rem;
 }
 nav{
@@ -23,7 +28,7 @@ nav{
 a{
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    color: #FFF2E7;
+    color: var(--main-font-color);
     margin-left: 2rem; 
     margin-right: 2rem;
 }
@@ -61,7 +66,7 @@ a{
     -o-transition: all 0.3s;
 }
 .links:hover{
-    color: #FEAFBE;
+    color: var(--least-used-color);
 }
 /*----------*/
 main{
@@ -80,20 +85,20 @@ main{
 h1{
     margin-bottom: 3rem;
     font-size: 64px;
-    color: #FFF2E7;
+    color: var(--main-font-color);
     font-family: 'Righteous', cursive;
 }
 h2{
     margin-bottom: 3rem;
     font-weight: 400;
     font-size: 24px;
-    color:#ECD6C4;
+    color:var(--secondary-font-color);
     font-family: 'Sarala', sans-serif;
 }
 h3{
     border-top: 1px solid rgba(255, 242, 231, 0.714);
     padding-top: 2rem;
-    color: #FFF2E7;
+    color: var(--main-font-color);
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 24px;
@@ -112,7 +117,7 @@ ol{
     align-items: center;
 }
 li{
-    color:#ECD6C4;
+    color:var(--secondary-font-color);
     font-family: 'Sarala', sans-serif;
     margin-bottom: 2rem;
 }
@@ -121,7 +126,7 @@ button{
     height: 57px;
     font-size: 24px;
     color:#2F2325;
-    background-color:#ECD6C4;
+    background-color:var(--secondary-font-color);
     font-family: 'Sarala', sans-serif;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -133,7 +138,7 @@ button{
     -o-transition: all 0.3s;
 }
 button:hover{
-    background-color: #FEAFBE;
+    background-color: var(--least-used-color);
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -142,13 +147,13 @@ button:hover{
 }
 /*----------*/
 footer{
-    border-top:0.1rem solid #FFF2E7;
+    border-top:0.1rem solid var(--main-font-color);
     display: flexbox;
     text-align: center;
     padding: 2rem;
 }
 .footerBot{
     font-family: 'Righteous', cursive;
-    color: #FEAFBE;
+    color: var(--least-used-color);
     font-size: 100px;
 }
