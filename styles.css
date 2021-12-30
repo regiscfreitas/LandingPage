@@ -91,11 +91,13 @@ h2{
     font-family: 'Sarala', sans-serif;
 }
 h3{
+    border-top: 1px solid rgba(255, 242, 231, 0.714);
+    padding-top: 2rem;
     color: #FFF2E7;
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 24px;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
